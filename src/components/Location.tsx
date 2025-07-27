@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Clock, Phone } from "lucide-react";
 import Map from "./Map";
 
@@ -11,23 +11,24 @@ const Location = () => {
             Nossa Localização
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Estamos localizados em um ambiente acessível e acolhedor, 
-            pensado especialmente para o conforto das crianças e famílias.
+            Estamos localizados em um ambiente acessível e acolhedor, pensado especialmente para o conforto das crianças e famílias.
           </p>
         </div>
-        
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Mapa em destaque */}
-          <div className="lg:col-span-2 order-2 lg:order-1">
-            <div className="bg-card rounded-xl p-6 shadow-lg border border-border/50">
+          <div className="lg:col-span-2 order-2 lg:order-1 flex flex-col justify-center">
+            <div className="bg-card rounded-xl p-6 shadow-lg border border-border/50 h-full flex flex-col">
               <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-primary" />
                 Encontre-nos no Mapa
               </h3>
-              <Map />
+              <div className="flex-1 flex items-center">
+                <div className="w-full h-[500px] md:h-[500px]">
+                  <Map />
+                </div>
+              </div>
             </div>
           </div>
-          
           {/* Informações organizadas */}
           <div className="space-y-6 order-1 lg:order-2">
             {/* Endereço */}
@@ -40,15 +41,15 @@ const Location = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Endereço</h3>
                     <p className="text-muted-foreground">
-                      Rua das Flores, 123<br />
-                      Bairro Jardim Primavera<br />
-                      São Paulo, SP - CEP: 01234-567
+                      Tech Mall Brisamar<br />
+                      R. Maria Facunda de Oliveira Dias, 56<br />
+                      Sala 19 - Brisamar<br />
+                      João Pessoa, PB - CEP: 58033-100
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
-            
             {/* Horário */}
             <Card className="border-secondary/20 bg-gradient-to-br from-secondary/5 to-secondary/10">
               <CardContent className="p-6">
@@ -76,7 +77,6 @@ const Location = () => {
                 </div>
               </CardContent>
             </Card>
-            
             {/* Facilidades */}
             <Card className="border-accent/20 bg-gradient-to-br from-accent/5 to-accent/10">
               <CardContent className="p-6">

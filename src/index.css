@@ -129,4 +129,35 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  .bg-hero-pattern {
+    background: linear-gradient(120deg, #d6f0fa 0%, #c6f7d4 100%);
+    background-image: url('/src/assets/logo-fundo.png'); /* ajuste o caminho conforme seu arquivo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* src/index.css */
+  .bg-hero-primary {
+    background: var(--gradient-primary);
+    background-image: url('/src/assets/logo-fundo.png');
+    background-repeat: repeat;
+    background-size: 300px;
+    background-position: center;
+  }
+  .bg-hero-secondary {
+    background: var(--gradient-secondary);
+    background-image: url('/src/assets/logo-fundo.png');
+    background-repeat: repeat;
+    background-size: 300px;
+    background-position: center;
+  }
+  .bg-hero-accent {
+    background: var(--gradient-accent);
+    background-image: url('/src/assets/logo-fundo.png');
+    background-repeat: repeat;
+    background-size: 300px;
+    background-position: center;
+  }
 }

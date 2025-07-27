@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Logo from "@/assets/logo-simbolo.png"; // ajuste o caminho se necessário
+import Logo from "@/assets/logo-simbolo.png";
 
 const Header = () => {
   const scrollToSection = (sectionId: string) => {
@@ -8,7 +8,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-card/80 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
+    <header className="bg-card/60 backdrop-blur-lg border-b border-border/50 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
