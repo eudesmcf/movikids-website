@@ -4,7 +4,7 @@ import teamMember from "@/assets/team-member.jpg";
 
 const Team = () => {
   return (
-    <section id="equipe" className="py-20 bg-gradient-to-br from-background to-muted/30">
+    <section id="equipe" className="pt-32 pb-20 bg-gradient-to-br from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -26,13 +26,13 @@ const Team = () => {
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
                     <img 
                       src={teamMember} 
-                      alt="Dra. Maria Silva - Fisioterapeuta e Psicomotricista" 
+                      alt="Dra. Jéssica Priscila Neres Carvalho - Fisioterapeuta e Psicomotricista" 
                       className="relative z-10 w-32 h-32 object-cover rounded-full border-4 border-card shadow-lg"
                     />
                   </div>
                   
                   <h3 className="text-2xl font-bold text-foreground mb-2">
-                    Dra. Maria Silva
+                    Dra. Jéssica Priscila Neres Carvalho
                   </h3>
                   
                   <p className="text-lg text-primary font-semibold mb-4">

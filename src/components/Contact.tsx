@@ -11,7 +11,7 @@ const Contact = () => {
       description: "Resposta rápida e atendimento personalizado",
       action: "Chamar no WhatsApp",
       link: "https://wa.me/5583996945909?text=Olá! Gostaria de agendar uma consulta.",
-      color: "bg-success hover:bg-success/90"
+      color: "bg-primary hover:bg-primary/90" // verde principal da marca
     },
     {
       icon: Instagram,
@@ -19,7 +19,7 @@ const Contact = () => {
       description: "Acompanhe nossas dicas e novidades",
       action: "Seguir no Instagram",
       link: "https://www.instagram.com/clinicamovikids/",
-      color: "bg-accent hover:bg-accent/90"
+      color: "bg-brand-purple hover:bg-brand-purple/90" // roxo da marca
     },
     {
       icon: Mail,
@@ -27,22 +27,21 @@ const Contact = () => {
       description: "Para dúvidas detalhadas e informações",
       action: "Enviar E-mail",
       link: "mailto:clinicamovikids@gmail.com",
-      color: "bg-primary hover:bg-primary/90"
+      color: "bg-secondary hover:bg-secondary/90" // azul secundário da marca
     }
   ];
 
-  // Adicione o método Telefone ao array contactMethods
   const phoneMethod = {
     icon: Phone,
     title: "Telefone",
     description: "Atendimento de segunda a sexta, das 8h às 18h",
     action: "Ligar",
     link: "tel:+5583996945909",
-    color: "bg-primary hover:bg-primary/90"
+    color: "bg-accent hover:bg-accent/90" // amarelo/accent da marca
   };
 
   return (
-    <section id="contato" className="py-20 bg-background">
+    <section id="contato" className="pt-28 pb-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -53,7 +52,6 @@ const Contact = () => {
             Entre em contato conosco através do canal de sua preferência.
           </p>
         </div>
-        
         <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {[...contactMethods, phoneMethod].map((method, index) => (
             <Card key={index} className="text-center group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/50">
@@ -71,7 +69,7 @@ const Contact = () => {
                   <p className="text-lg font-semibold text-foreground mb-2">(83) 99694-5909</p>
                 ) : null}
                 <Button 
-                  className={`w-full ${method.color} text-white shadow-lg`}
+                  className="w-full bg-secondary hover:bg-secondary/90 text-primary-foreground shadow-lg"
                   onClick={() => window.open(method.link, '_blank')}
                   asChild={method.title === "Telefone"}
                 >

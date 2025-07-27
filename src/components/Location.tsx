@@ -4,7 +4,7 @@ import Map from "./Map";
 
 const Location = () => {
   return (
-    <section id="localizacao" className="py-20 bg-gradient-to-br from-secondary/5 to-accent/5">
+    <section id="localizacao" className="pt-32 pb-20 bg-gradient-to-br from-secondary/5 to-accent/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -32,7 +32,7 @@ const Location = () => {
           {/* Informações organizadas */}
           <div className="space-y-6 order-1 lg:order-2">
             {/* Endereço */}
-            <Card className="border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10">
+            <Card className="border-primary/20 bg-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3">
                   <div className="p-2 bg-primary rounded-lg">
@@ -51,7 +51,7 @@ const Location = () => {
               </CardContent>
             </Card>
             {/* Horário */}
-            <Card className="border-secondary/20 bg-gradient-to-br from-secondary/5 to-secondary/10">
+            <Card className="border-secondary/20 bg-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3">
                   <div className="p-2 bg-secondary rounded-lg">
@@ -78,7 +78,7 @@ const Location = () => {
               </CardContent>
             </Card>
             {/* Facilidades */}
-            <Card className="border-accent/20 bg-gradient-to-br from-accent/5 to-accent/10">
+            <Card className="border-accent/20 bg-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3">
                   <div className="p-2 bg-accent rounded-lg">

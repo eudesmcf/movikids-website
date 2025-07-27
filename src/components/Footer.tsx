@@ -1,10 +1,11 @@
 import LogoSimbolo from "@/assets/logo-simbolo.png";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-4">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-4 gap-6">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
@@ -21,18 +22,18 @@ const Footer = () => {
           
           <div>
             <h4 className="font-semibold mb-4">Serviços</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm text-background/80">
-              <ul className="space-y-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-12 gap-y-2 text-sm text-background/80">
+              <ul className="space-y-2 pl-0">
                 <li>Psicomotricidade</li>
                 <li>Fisioterapia Infantil</li>
                 <li>Fisioterapia Aquática</li>
               </ul>
-              <ul className="space-y-2">
+              <ul className="space-y-2 pl-0">
                 <li>Reabilitação Neurofuncional</li>
                 <li>Visitas Escolares</li>
                 <li>Avaliações</li>
               </ul>
-              <ul className="space-y-2">
+              <ul className="space-y-2 pl-0">
                 <li>Mentorias</li>
                 <li>Orientações</li>
                 <li>Supervisões</li>
@@ -48,6 +49,36 @@ const Footer = () => {
               </li>
               <li>
                 Endereço: R. Maria Facunda de Oliveira Dias, 56 - Sala 19 - Brisamar, João Pessoa - PB, 58033-100
+              </li>
+              <li>
+                <span className="font-semibold">Horário:</span> Segunda a Sexta, 8h às 18h
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">Contato</h4>
+            <ul className="space-y-2 text-sm text-background/80">
+              <li className="flex items-center gap-2">
+                <span className="font-semibold">Telefone:</span>
+                <a
+                  href="https://wa.me/5583996945909?text=Olá! Gostaria de agendar uma consulta."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-primary flex items-center gap-1"
+                >
+                  (83) 99694-5909
+                  <FaWhatsapp className="inline-block text-green-500 w-4 h-4" />
+                </a>
+              </li>
+              <li>
+                <span className="font-semibold">E-mail:</span>{" "}
+                <a
+                  href="mailto:clinicamovikids@gmail.com"
+                  className="underline hover:text-primary"
+                >
+                  clinicamovikids@gmail.com
+                </a>
               </li>
             </ul>
           </div>
