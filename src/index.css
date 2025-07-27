@@ -17,17 +17,23 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 225 15% 20%;
 
-    --primary: 195 100% 55%;
+    --primary: 150 97% 23%; /* #017d3a */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 100% 85%;
-    --secondary-foreground: 225 15% 20%;
+    --secondary: 184 96% 39%; /* #04bac5 */
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 196 50% 95%;
     --muted-foreground: 225 10% 50%;
 
-    --accent: 315 70% 80%;
+    --accent: 70 94% 39%; /* #c0d904 */
     --accent-foreground: 225 15% 20%;
+
+    --brand-blue: 218 97% 23%; /* #023e73 */
+    --brand-blue-foreground: 0 0% 100%;
+    
+    --brand-purple: 237 42% 57%; /* #6b73be */
+    --brand-purple-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
@@ -46,10 +52,11 @@ All colors MUST be HSL.
     --info-foreground: 0 0% 100%;
 
     /* Gradientes coloridos e lúdicos */
-    --gradient-primary: linear-gradient(135deg, hsl(195 100% 55%), hsl(215 100% 65%));
-    --gradient-secondary: linear-gradient(135deg, hsl(45 100% 85%), hsl(60 100% 75%));
-    --gradient-accent: linear-gradient(135deg, hsl(315 70% 80%), hsl(280 70% 75%));
-    --gradient-hero: linear-gradient(135deg, hsl(196 100% 98%), hsl(195 50% 95%));
+    --gradient-primary: linear-gradient(135deg, hsl(150 97% 23%), hsl(184 96% 39%));
+    --gradient-secondary: linear-gradient(135deg, hsl(184 96% 39%), hsl(70 94% 39%));
+    --gradient-accent: linear-gradient(135deg, hsl(70 94% 39%), hsl(237 42% 57%));
+    --gradient-hero: linear-gradient(135deg, hsl(184 96% 95%), hsl(150 50% 95%));
+    --gradient-brand: linear-gradient(135deg, hsl(218 97% 23%), hsl(237 42% 57%));
 
     /* Sombras suaves */
     --shadow-soft: 0 4px 20px hsl(195 100% 55% / 0.1);
