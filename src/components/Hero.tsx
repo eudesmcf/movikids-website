@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="min-h-screen flex items-center bg-gradient-to-br from-background to-muted">
+    <section id="inicio" className="min-h-screen flex items-center bg-hero-pattern">
       <div className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

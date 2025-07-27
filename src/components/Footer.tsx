@@ -2,9 +2,9 @@ import LogoSimbolo from "@/assets/logo-simbolo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-8">
+    <footer className="bg-foreground text-background py-4">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
@@ -53,10 +53,10 @@ const Footer = () => {
           </div>
         </div>
         
-        <hr className="my-8 border-background/20" />
+        <hr className="my-4 border-background/20" />
         
         <div className="text-center text-sm text-background/60">
-          © 2024 Movikids - Clínica de Desenvolvimento Infantil. Todos os direitos reservados.
+          © 2025 Movikids - Clínica de Desenvolvimento Infantil. Todos os direitos reservados.
         </div>
       </div>
     </footer>
