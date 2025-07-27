@@ -18,8 +18,7 @@ const Hero = () => {
               para Crianças
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Oferecemos serviços de psicomotricidade, fisioterapia infantil, mentorias e visitas escolares 
-              com muito carinho e profissionalismo.
+              Oferecemos serviços especializados para o desenvolvimento infantil e motor de crianças de 0 a 15 anos. Nossa equipe atua com psicomotricidade, fisioterapia, fisioterapia aquática, reabilitação neurofuncional, visitas escolares, avaliações, além de apoiar outros profissionais com mentorias, orientações e supervisões.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 

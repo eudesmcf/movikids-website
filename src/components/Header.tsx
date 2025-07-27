@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Logo from "@/assets/logo-simbolo.png"; // ajuste o caminho se necessário
 
 const Header = () => {
   const scrollToSection = (sectionId: string) => {
@@ -10,13 +11,17 @@ const Header = () => {
     <header className="bg-card/80 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">C</span>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img
+              src={Logo}
+              alt="Logo Movikids"
+              className="w-12 h-12 object-contain"
+            />
             <div>
-              <h1 className="text-xl font-bold text-foreground">Clínica Infantil</h1>
-              <p className="text-sm text-muted-foreground">Cuidado especializado para crianças</p>
+              <h1 className="text-xl font-bold text-foreground">Movikids</h1>
+              <p className="text-sm text-muted-foreground">
+                Clínica de Desenvolvimento Infantil
+              </p>
             </div>
           </div>
           

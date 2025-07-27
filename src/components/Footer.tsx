@@ -1,3 +1,5 @@
+import LogoSimbolo from "@/assets/logo-simbolo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-8">
@@ -5,33 +7,48 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold">C</span>
-              </div>
-              <span className="font-bold text-lg">Clínica Infantil</span>
+              <img
+                src={LogoSimbolo}
+                alt="Logo Movikids"
+                className="w-8 h-8 object-contain"
+              />
+              <span className="font-bold text-lg">Movikids</span>
             </div>
             <p className="text-sm text-background/80">
-              Cuidado especializado para crianças com muito carinho e profissionalismo.
+              Clínica de Desenvolvimento Infantil. Cuidado especializado para crianças de 0 a 15 anos.
             </p>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Serviços</h4>
-            <ul className="space-y-2 text-sm text-background/80">
-              <li>Psicomotricidade</li>
-              <li>Fisioterapia Infantil</li>
-              <li>Mentorias</li>
-              <li>Visitas Escolares</li>
-            </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm text-background/80">
+              <ul className="space-y-2">
+                <li>Psicomotricidade</li>
+                <li>Fisioterapia Infantil</li>
+                <li>Fisioterapia Aquática</li>
+              </ul>
+              <ul className="space-y-2">
+                <li>Reabilitação Neurofuncional</li>
+                <li>Visitas Escolares</li>
+                <li>Avaliações</li>
+              </ul>
+              <ul className="space-y-2">
+                <li>Mentorias</li>
+                <li>Orientações</li>
+                <li>Supervisões</li>
+              </ul>
+            </div>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Contato</h4>
+            <h4 className="font-semibold mb-4">Localização</h4>
             <ul className="space-y-2 text-sm text-background/80">
-              <li>Rua das Flores, 123</li>
-              <li>São Paulo, SP</li>
-              <li>(11) 99999-9999</li>
-              <li>contato@clinicainfantil.com.br</li>
+              <li>
+                <span className="font-semibold">Techne Mall Brisamar</span>
+              </li>
+              <li>
+                Endereço: R. Maria Facunda de Oliveira Dias, 56 - Sala 19 - Brisamar, João Pessoa - PB, 58033-100
+              </li>
             </ul>
           </div>
         </div>
@@ -39,7 +56,7 @@ const Footer = () => {
         <hr className="my-8 border-background/20" />
         
         <div className="text-center text-sm text-background/60">
-          © 2024 Clínica Infantil. Todos os direitos reservados.
+          © 2024 Movikids - Clínica de Desenvolvimento Infantil. Todos os direitos reservados.
         </div>
       </div>
     </footer>
