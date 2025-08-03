@@ -46,6 +46,9 @@ const Team = () => {
                     <Badge className="bg-secondary text-secondary-foreground">
                       10+ anos
                     </Badge>
+                    <Badge className="bg-accent text-accent-foreground">
+                      Especialista em Autismo
+                    </Badge>
                   </div>
                 </div>
                 
