@@ -39,17 +39,20 @@ const Team = () => {
                     Fisioterapeuta e Psicomotricista
                   </p>
                   
-                  <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                     <Badge className="bg-primary text-primary-foreground">
-                      CrefitO 12345-F
+                      Crefito 266408-F
                     </Badge>
                     <Badge className="bg-secondary text-secondary-foreground">
-                      10+ anos
+                      8+ anos
                     </Badge>
                     <Badge className="bg-accent text-accent-foreground">
                       Especialista em Autismo
                     </Badge>
-                  </div>
+                    <Badge className="bg-brand-purple text-brand-purple-foreground">
+                      Esp. em Reabilitação em Neuropsiquiatria
+                    </Badge>
+                    </div>
                 </div>
                 
                 {/* Formação e experiência */}

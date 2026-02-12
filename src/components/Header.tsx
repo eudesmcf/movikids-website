@@ -7,6 +7,14 @@ const Header = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToSectionWithOffset = (sectionId: string, offset = 80) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="bg-card/60 backdrop-blur-lg border-b border-border/50 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 py-4">
@@ -27,7 +35,7 @@ const Header = () => {
           
           <nav className="hidden md:flex items-center space-x-6">
             <button 
-              onClick={() => scrollToSection('inicio')} 
+              onClick={() => scrollToSectionWithOffset('inicio', 80)}
               className="text-foreground hover:text-primary transition-colors"
             >
               Início
@@ -50,12 +58,12 @@ const Header = () => {
             >
               Localização
             </button>
-            <Button 
-              onClick={() => scrollToSection('contato')} 
-              className="bg-primary hover:bg-primary/90"
+            <button 
+              onClick={() => scrollToSection('contato')}
+              className="text-foreground hover:text-primary transition-colors"
             >
               Contato
-            </Button>
+            </button>
           </nav>
         </div>
       </div>
