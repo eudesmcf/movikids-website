@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local preview folder used by preview:ghpages script
+preview_root/
