@@ -65,9 +65,6 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col justify-end min-h-[120px]">
-                {method.title === "Telefone" ? (
-                  <p className="text-lg font-semibold text-foreground mb-2">(83) 99694-5909</p>
-                ) : null}
                 <Button 
                   className="w-full bg-secondary hover:bg-secondary/90 text-primary-foreground shadow-lg"
                   onClick={() => window.open(method.link, '_blank')}
