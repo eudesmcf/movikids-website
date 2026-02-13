@@ -1,4 +1,4 @@
-# Clínica Lovable — Website
+# Clínica Movikids — Website
 
 Site institucional construído com Vite + React + TypeScript e Tailwind CSS.
 
@@ -16,8 +16,8 @@ Este repositório contém o site da Clínica Movikids: páginas públicas, compo
 1. Clone o repositório:
 
 ```bash
-git clone <SEU_REPO_URL>
-cd web-site-clinica-lovable
+git clone https://github.com/eudesmcf/movikids-website/
+cd movikids-website
 ```
 
 2. Instale dependências:
