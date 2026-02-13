@@ -4,7 +4,7 @@ Site institucional construído com Vite + React + TypeScript e Tailwind CSS.
 
 ## Resumo
 
-Este repositório contém o site da Clínica Lovable: páginas públicas, componentes React reutilizáveis e configuração para empacotamento com Vite. O projeto usa a biblioteca shadcn-ui para componentes base e integra mapas e gráficos onde necessário.
+Este repositório contém o site da Clínica Movikids: páginas públicas, componentes React reutilizáveis e configuração para empacotamento com Vite. O projeto usa a biblioteca shadcn-ui para componentes base e integra mapas e gráficos onde necessário.
 
 ## Pré-requisitos
 
