@@ -7,7 +7,12 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   // Use base '/' em desenvolvimento para evitar 404 local;
   // em produção (build) use o caminho do repositório para GitHub Pages
-  base: mode === 'development' ? '/' : '/movikids-website/',
+    // Use base '/' em desenvolvimento para evitar 404 local.
+    // Em produção, publique no root ('/') quando houver um CNAME/custom domain
+    // (útil para GitHub Pages com domínio customizado). Se quiser publicar
+    // em um subpath (ex: '/movikids-website/'), ajuste a variável de ambiente
+    // VITE_BASE ou modifique aqui.
+    base: process.env.VITE_BASE || (mode === 'development' ? '/' : '/'),
   server: {
     host: "::",
     port: 8080,
