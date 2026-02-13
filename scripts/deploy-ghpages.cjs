@@ -16,11 +16,11 @@ if (!fs.existsSync(path.resolve(process.cwd(), 'dist'))) {
   process.exit(1);
 }
 
-// const cnameSrc = path.resolve(process.cwd(), 'CNAME');
-// const cnameDest = path.resolve(process.cwd(), 'dist', 'CNAME');
-// if (fs.existsSync(cnameSrc)) {
-//   fs.copyFileSync(cnameSrc, cnameDest);
-// }
+const cnameSrc = path.resolve(process.cwd(), 'CNAME');
+const cnameDest = path.resolve(process.cwd(), 'dist', 'CNAME');
+if (fs.existsSync(cnameSrc)) {
+  fs.copyFileSync(cnameSrc, cnameDest);
+}
 
 ghpages.publish('dist', (err) => {
   if (err) {
