@@ -22,37 +22,39 @@ const Team = () => {
               <div className="grid md:grid-cols-3 gap-8 items-start">
                 {/* Foto e informações básicas */}
                 <div className="text-center md:text-left">
-                  <div className="relative mb-6 inline-block">
+                    <div className="relative mb-6 inline-block">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
-                    <img 
+                    <div className="relative z-10 w-32 h-32 rounded-full border-4 border-card shadow-lg overflow-hidden">
+                      <img 
                       src={teamMember} 
                       alt="Dra. Jéssica Priscila Neres Carvalho - Fisioterapeuta e Psicomotricista" 
-                      className="relative z-10 w-32 h-32 object-cover rounded-full border-4 border-card shadow-lg"
-                    />
-                  </div>
+                      className="w-full h-full object-cover"
+                      />
+                    </div>
+                    </div>
                   
                   <h3 className="text-2xl font-bold text-foreground mb-2">
-                    Dra. Jéssica Priscila Neres Carvalho
+                  Dra. Jéssica Priscila Neres Carvalho
                   </h3>
                   
                   <p className="text-lg text-primary font-semibold mb-4">
-                    Fisioterapeuta e Psicomotricista
+                  Fisioterapeuta e Psicomotricista
                   </p>
                   
-                    <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                    <Badge className="bg-primary text-primary-foreground">
-                      Crefito 266408-F
-                    </Badge>
-                    <Badge className="bg-secondary text-secondary-foreground">
-                      8+ anos
-                    </Badge>
-                    <Badge className="bg-accent text-accent-foreground">
-                      Especialista em Autismo
-                    </Badge>
-                    <Badge className="bg-brand-purple text-brand-purple-foreground">
-                      Esp. em Reabilitação em Neuropsiquiatria
-                    </Badge>
-                    </div>
+                  <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                  <Badge className="bg-primary text-primary-foreground">
+                    Crefito 266408-F
+                  </Badge>
+                  <Badge className="bg-secondary text-secondary-foreground">
+                    +7 anos em Desenvolmento Infantil
+                  </Badge>
+                  <Badge className="bg-accent text-accent-foreground">
+                    Especialista em Autismo
+                  </Badge>
+                  <Badge className="bg-brand-purple text-brand-purple-foreground">
+                    Esp. em Reabilitação em Neuropsiquiatria
+                  </Badge>
+                  </div>
                 </div>
                 
                 {/* Formação e experiência */}
@@ -60,13 +62,29 @@ const Team = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      Formação
+                    </h4>
+                    <div className="space-y-2 text-muted-foreground">
+                      <p>• Desenvolvimento Neuropsicomotor</p>
+                      <p>• Psicomotricidade Clínica e Institucional</p>
+                      <p>• Intervenção Precoce</p>
+                      <p>• Fisioterapia no Autismo</p>
+                      <p>• Fisioterapia no TDAH</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
                       Formação Acadêmica
                     </h4>
                     <div className="space-y-2 text-muted-foreground">
-                      <p>• <strong>Graduação:</strong> Fisioterapia - Universidade São Paulo (USP)</p>
-                      <p>• <strong>Especialização:</strong> Psicomotricidade Clínica - UNIFESP</p>
-                      <p>• <strong>Pós-graduação:</strong> Fisioterapia Pediátrica e Neonatal</p>
-                      <p>• <strong>Formação complementar:</strong> Integração Sensorial</p>
+                      <p>• Graduação em Fisioterapia – Uninassau (2018.1)</p>
+                      <p>• Psicomotricista Clínica e Institucional – Unifip (2020)</p>
+                      <p>• Especialista em Fisioterapia no Autismo – CBI of Miami (2022)</p>
+                      <p>• Fisioterapeuta Aquática – ENAFA (2023)</p>
+                      <p>• Pós-graduanda em Reabilitação em Neuropediatria – Inclusão Eficiente (conclusão em 2026)</p>
+                      <p>• Formação complementar em Desenvolvimento Infantil, Intervenção Precoce, Transtornos do Neurodesenvolvimento, ABA, Modelo Denver e Terapias Baseadas em Evidências</p>
                     </div>
                   </div>
                   
@@ -76,9 +94,13 @@ const Team = () => {
                       Experiência Profissional
                     </h4>
                     <div className="space-y-2 text-muted-foreground">
-                      <p>• <strong>Hospital Infantil (2014-2019):</strong> Fisioterapia neonatal e pediátrica</p>
-                      <p>• <strong>Centro de Reabilitação (2019-2021):</strong> Coordenadora do setor infantil</p>
-                      <p>• <strong>Clínica própria (2021-atual):</strong> Atendimento especializado em desenvolvimento</p>
+                      <p>• Atendimento clínico em desenvolvimento infantil</p>
+                      <p>• Atuação em clínica multidisciplinar</p>
+                      <p>• Supervisão de profissionais na atuação com crianças com TEA, TOD e TDAH</p>
+                      <p>• Elaboração de relatórios cinético-funcionais e planos terapêuticos individualizados</p>
+                      <p>• Acompanhamento de crianças com atraso no desenvolvimento, hipotonia, alterações posturais e dificuldades motoras globais</p>
+                      <p>• Orientação institucional: ajuste de mobiliário, adaptação curricular e organização escolar para inclusão da pessoa com deficiência</p>
+                      <p>• Realização de palestras sobre inclusão, desenvolvimento infantil e práticas baseadas em evidências</p>
                     </div>
                   </div>
                   
@@ -90,27 +112,30 @@ const Team = () => {
                     <div className="grid sm:grid-cols-2 gap-2">
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <div className="w-1 h-1 bg-primary rounded-full"></div>
-                        <span>Desenvolvimento motor</span>
+                        <span>Desenvolvimento Neuropsicomotor</span>
                       </div>
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <div className="w-1 h-1 bg-secondary rounded-full"></div>
-                        <span>Integração sensorial</span>
+                        <span>Psicomotricidade Clínica e Institucional</span>
                       </div>
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <div className="w-1 h-1 bg-accent rounded-full"></div>
-                        <span>Atrasos no desenvolvimento</span>
+                        <span>Intervenção Precoce</span>
                       </div>
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <div className="w-1 h-1 bg-brand-purple rounded-full"></div>
-                        <span>Suporte escolar</span>
+                        <span>Fisioterapia no Autismo</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-muted-foreground">
+                        <div className="w-1 h-1 bg-primary rounded-full"></div>
+                        <span>Fisioterapia no TDAH</span>
                       </div>
                     </div>
                   </div>
                   
                   <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-4">
                     <p className="text-foreground italic">
-                      "Acredito que cada criança tem seu próprio ritmo de desenvolvimento. Meu papel é oferecer o suporte necessário 
-                      para que ela alcance seu potencial máximo, sempre respeitando suas individualidades e necessidades."
+                      "Cada criança possui um potencial único. Meu compromisso é oferecer cuidado técnico, acolhedimento e intervenções personalizadas para que ela desenvolva suas habilidades com segurança, autonomia e confiança."
                     </p>
                   </div>
                 </div>

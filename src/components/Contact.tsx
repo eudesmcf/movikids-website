@@ -37,7 +37,7 @@ const Contact = () => {
     description: "Atendimento de segunda a sexta, das 8h às 18h",
     action: "Ligar",
     link: "tel:+5583996945909",
-    color: "bg-accent hover:bg-accent/90" // amarelo/accent da marca
+    color: "bg-accent hover:bg-accent/90" 
   };
 
   return (

@@ -161,3 +161,8 @@ All colors MUST be HSL.
     background-position: center;
   }
 }
+
+/* Evita o cursor de digitação piscando em elementos não editáveis quando o usuário clica */
+*:not(input):not(textarea):not([contenteditable="true"]) {
+  caret-color: transparent;
+}

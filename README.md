@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+# Clínica Lovable — Website
 
-## Project info
+Site institucional construído com Vite + React + TypeScript e Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/33c952f5-785c-49bd-b628-b41a0358fee8
+## Resumo
 
-## How can I edit this code?
+Este repositório contém o site da Clínica Lovable: páginas públicas, componentes React reutilizáveis e configuração para empacotamento com Vite. O projeto usa a biblioteca shadcn-ui para componentes base e integra mapas e gráficos onde necessário.
 
-There are several ways of editing your application.
+## Pré-requisitos
 
-**Use Lovable**
+- Node.js (>= 18 recomendado)
+- npm
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/33c952f5-785c-49bd-b628-b41a0358fee8) and start prompting.
+## Instalação (desenvolvimento)
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone o repositório:
 
-**Use your preferred IDE**
+```bash
+git clone <SEU_REPO_URL>
+cd web-site-clinica-lovable
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Instale dependências:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+npm install
+```
 
-Follow these steps:
+3. Inicie o servidor de desenvolvimento:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O servidor inicia em `http://localhost:5173` por padrão.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts úteis
 
-**Use GitHub Codespaces**
+- `npm run dev` — servidor de desenvolvimento (Vite)
+- `npm run build` — build de produção
+- `npm run build:dev` — build em modo development
+- `npm run preview` — build + preview local
+- `npm run lint` — rodar ESLint
+- `npm run deploy` — deploy para GitHub Pages (usa `scripts/deploy-ghpages.cjs`)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Estrutura do projeto
 
-## What technologies are used for this project?
+- `src/` — código-fonte React (páginas, componentes, hooks)
+	- `components/` — componentes da UI e componentes específicos do site
+	- `pages/` — páginas roteadas (Index, Blog, Login, NotFound)
+	- `assets/` — imagens e outros assets
+- `public/` — arquivos servidos estáticos
+- `scripts/` — scripts de suporte (deploy/preview para gh-pages)
 
-This project is built with:
+## Contribuição
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Abra uma issue descrevendo a mudança que pretende fazer.
+2. Crie um branch com um nome descritivo: `feature/descricao` ou `fix/descricao`.
+3. Faça commits claros e atômicos.
+4. Abra um Pull Request para revisão.
 
-## How can I deploy this project?
+Observação: ficheiros de dados de exemplo foram removidos do repositório principal. Se precisar de dados de exemplo, adicione-os em `data/examples/` e abra um PR explicando o uso.
 
-Simply open [Lovable](https://lovable.dev/projects/33c952f5-785c-49bd-b628-b41a0358fee8) and click on Share -> Publish.
+## Deploy
 
-## Can I connect a custom domain to my Lovable project?
+O projeto inclui scripts para publicar em GitHub Pages. Para publicar:
 
-Yes, you can!
+```bash
+npm run build
+npm run deploy
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+O script `deploy` depende de `predeploy` (que executa `build`). Verifique `scripts/deploy-ghpages.cjs` para configurar opções adicionais.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Verificação local rápida
+
+Após alterações significativas, rode:
+
+```bash
+npm run lint
+npm run build
+npm run preview
+```
+
+## Contato
+
+Para dúvidas sobre o projeto ou deploy, abra uma issue ou contacte o mantenedor do repositório.
+
+---
+Atualizado em 2026-02-12
