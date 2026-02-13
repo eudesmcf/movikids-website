@@ -41,7 +41,7 @@ const Location = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Endereço</h3>
                     <p className="text-muted-foreground">
-                      Tech Mall Brisamar<br />
+                      Techne Mall Brisamar<br />
                       R. Maria Facunda de Oliveira Dias, 56<br />
                       Sala 19 - Brisamar<br />
                       João Pessoa, PB - CEP: 58033-100

@@ -46,13 +46,13 @@ const Team = () => {
                     Crefito 266408-F
                   </Badge>
                   <Badge className="bg-secondary text-secondary-foreground">
-                    +7 anos em Desenvolmento Infantil
+                    +7 anos em Desenvolvimento Infantil
                   </Badge>
                   <Badge className="bg-accent text-accent-foreground">
                     Especialista em Autismo
                   </Badge>
                   <Badge className="bg-brand-purple text-brand-purple-foreground">
-                    Esp. em Reabilitação em Neuropsiquiatria
+                    Esp. em Reabilitação em Neuropediatria 
                   </Badge>
                   </div>
                 </div>
