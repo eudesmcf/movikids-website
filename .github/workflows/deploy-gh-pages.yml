@@ -33,6 +33,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy CNAME to dist
+        run: |
+          if [ -f CNAME ]; then
+            mkdir -p dist
+            cp CNAME dist/CNAME
+          fi
+
       - name: Deploy to gh-pages (peaceiris)
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
